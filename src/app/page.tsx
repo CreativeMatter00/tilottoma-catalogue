@@ -1,5 +1,6 @@
-import CatalogHero from "@/components/home/catalog-hero";
+import CatalogHero from "@/components/home/CatalogHero";
+
 
 export default function Home() {
-return <CatalogHero />
+  return <CatalogHero />
 }
