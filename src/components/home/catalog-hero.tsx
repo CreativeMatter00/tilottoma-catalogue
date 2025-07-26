@@ -1,8 +1,8 @@
 "use client"
 
-import { Heart, User, ChevronRight } from "lucide-react"
+import { Heart, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { TilottomaLogo, TilottomaLogoWhite } from "../icons/logo"
+import { Right, TilottomaLogo, TilottomaLogoWhite } from "../icons/logo"
 
 export default function CatalogHeroVideo({ onNext }: { onNext: () => void }) {
     return (
@@ -24,7 +24,7 @@ export default function CatalogHeroVideo({ onNext }: { onNext: () => void }) {
             <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between p-6 bg-[#25252533] backdrop-blur-[20px]">
                 <TilottomaLogo />
                 <div className="flex items-center space-x-4 text-white">
-                    <span className="text-sm">Corporate Sales</span>
+                    <span className="text-sm font-light">Corporate Sales</span>
                     <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 cursor-pointer">
                         <Heart className="w-5 h-5" />
                     </Button>
@@ -45,9 +45,9 @@ export default function CatalogHeroVideo({ onNext }: { onNext: () => void }) {
             {/* Navigation Button */}
             <button
                 onClick={onNext}
-                className="absolute right-6 top-1/2 -translate-y-1/2 z-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-3 text-white hover:bg-white/20 transition-all duration-300 group"
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-20  transition-all duration-300 group"
             >
-                <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+                <Right />
             </button>
 
             {/* Branding */}
