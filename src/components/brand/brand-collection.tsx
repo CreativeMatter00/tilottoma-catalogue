@@ -1,11 +1,13 @@
 "use client"
 
-import Image from "next/image"
-import { Heart, User, Search, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { ArrowLeft, Heart, Search, User } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 import { Input } from "../ui/input"
+import { TileCard } from "./TileCard"
+import { TilottomaLogo } from "../icons/logo"
 
 interface Product {
     id: string
@@ -22,19 +24,19 @@ const products: Product[] = [
         id: "amazonas",
         name: "Amazonas",
         dimensions: '35.43" x 35.43"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/9.jpg",
     },
     {
         id: "angora",
         name: "Angora",
         dimensions: '11.81" x 35.43"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/8.jpg",
     },
     {
         id: "cristallo",
         name: "Cristallo",
         dimensions: '35.43" x 35.43"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/4.jpg",
         description:
             "Marble is still shining in all its glory, especially in shades of white. White shades that convey a feeling of peace and relaxation. The DA VINCI collection, designed in 2017 to convey the luxury conferred by a noble material such as marble and with the characteristic durability of ultra-resistant porcelain.....",
         colors: 8,
@@ -44,39 +46,39 @@ const products: Product[] = [
         id: "da-vinci",
         name: "Da Vinci",
         dimensions: '23.62" x 47.24"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/5.jpg",
     },
     {
         id: "domino",
         name: "Domino",
         dimensions: '23.62" x 47.24"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/10.jpg",
     },
     {
         id: "elektra",
         name: "Elektra",
         dimensions: '23.62" x 47.24"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/1.jpg",
     },
     {
         id: "fontana",
         name: "Fontana",
         dimensions: '23.62" x 47.24"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/2.jpg",
     },
     {
         id: "ground",
         name: "Ground",
         dimensions: '23.62" x 23.62"',
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/image/brand/7.jpg",
     },
 ]
 
 interface BrandCollectionProps {
     brandId: string
 }
-
-export default function BrandCollection({ brandId }: BrandCollectionProps) {
+// { brandId }: BrandCollectionProps
+export default function BrandCollection() {
     const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
     const [searchTerm, setSearchTerm] = useState("")
 
@@ -93,88 +95,27 @@ export default function BrandCollection({ brandId }: BrandCollectionProps) {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Header */}
-            <header className="bg-white shadow-sm border-b">
-                <div className="max-w-7xl mx-auto px-6 py-4">
-                    <div className="flex items-center justify-between">
-                        {/* Logo and Back Button */}
-                        <div className="flex items-center space-x-4">
-                            <Link href="/" className="flex items-center space-x-2 text-gray-600 hover:text-gray-900">
-                                <ArrowLeft className="w-5 h-5" />
-                                <span>Collection</span>
-                            </Link>
-                            <div className="flex items-center space-x-2 ml-8">
-                                <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-                                    <span className="text-white font-bold text-lg">t</span>
-                                </div>
-                                <span className="text-gray-900 text-xl font-medium">tilottoma</span>
-                            </div>
-                        </div>
 
-                        {/* Search and Filters */}
-                        <div className="flex items-center space-x-4">
-                            <div className="relative">
-                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                                <Input
-                                    placeholder="Search..."
-                                    value={searchTerm}
-                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                    className="pl-10 w-64"
-                                />
-                            </div>
-                            <Button variant="outline" size="sm">
-                                Effect
-                            </Button>
-                            <Button variant="outline" size="sm">
-                                Tiles Body
-                            </Button>
-                            <Button variant="outline" size="sm">
-                                Size
-                            </Button>
-                            <Button variant="outline" size="sm">
-                                Usage
-                            </Button>
-                        </div>
-
-                        {/* Right side navigation */}
-                        <div className="flex items-center space-x-4 text-gray-600">
-                            <span className="text-sm">Corporate Sales</span>
-                            <Button variant="ghost" size="icon">
-                                <Heart className="w-5 h-5" />
-                            </Button>
-                            <Button variant="ghost" size="icon">
-                                <User className="w-5 h-5" />
-                            </Button>
-                        </div>
-                    </div>
+            <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between p-6 bg-white backdrop-blur-[20px]">
+                <TilottomaLogo />
+                <div className="flex items-center space-x-4 text-[#252525]">
+                    <span className="text-base font-light">Corporate Sales</span>
+                    <Button variant="ghost" size="icon" className="text-[#252525] hover:bg-[#252525]/10 cursor-pointer">
+                        <Heart className="w-5 h-5" />
+                    </Button>
+                    <Button variant="ghost" size="icon" className="text-[#252525] hover:bg-[#252525]/10 cursor-pointer">
+                        <User className="w-5 h-5" />
+                    </Button>
                 </div>
             </header>
 
+
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto px-6 py-8">
+            <main className=" px-6 py-8 pt-32">
                 {/* Product Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {filteredProducts.map((product) => (
-                        <div
-                            key={product.id}
-                            onClick={() => handleProductClick(product)}
-                            className="group cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                        >
-                            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                                <div className="relative h-64 overflow-hidden">
-                                    <Image
-                                        src={product.image || "/placeholder.svg"}
-                                        alt={product.name}
-                                        fill
-                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                    />
-                                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <h3 className="text-xl font-semibold">{product.name}</h3>
-                                        <p className="text-sm">{product.dimensions}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <TileCard key={product.id} name={product.name} size={product.dimensions} description={product?.description || ""} faces={product?.faces || 0} colors={product?.colors || 0} image={product.image} />
                     ))}
                 </div>
             </main>
@@ -225,3 +166,60 @@ export default function BrandCollection({ brandId }: BrandCollectionProps) {
         </div>
     )
 }
+
+
+
+{/* <header className="bg-white shadow-sm border-b">
+                <div className="max-w-7xl mx-auto px-6 py-4">
+                    <div className="flex items-center justify-between">
+                        
+                        <div className="flex items-center space-x-4">
+                            <Link href="/" className="flex items-center space-x-2 text-gray-600 hover:text-gray-900">
+                                <ArrowLeft className="w-5 h-5" />
+                                <span>Collection</span>
+                            </Link>
+                            <div className="flex items-center space-x-2 ml-8">
+                                <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                                    <span className="text-white font-bold text-lg">t</span>
+                                </div>
+                                <span className="text-gray-900 text-xl font-medium">tilottoma</span>
+                            </div>
+                        </div>
+
+                     
+                        <div className="flex items-center space-x-4">
+                            <div className="relative">
+                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+                                <Input
+                                    placeholder="Search..."
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    className="pl-10 w-64"
+                                />
+                            </div>
+                            <Button variant="outline" size="sm">
+                                Effect
+                            </Button>
+                            <Button variant="outline" size="sm">
+                                Tiles Body
+                            </Button>
+                            <Button variant="outline" size="sm">
+                                Size
+                            </Button>
+                            <Button variant="outline" size="sm">
+                                Usage
+                            </Button>
+                        </div>
+
+                                <div className="flex items-center space-x-4 text-gray-600">
+                            <span className="text-sm">Corporate Sales</span>
+                            <Button variant="ghost" size="icon">
+                                <Heart className="w-5 h-5" />
+                            </Button>
+                            <Button variant="ghost" size="icon">
+                                <User className="w-5 h-5" />
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </header> */}

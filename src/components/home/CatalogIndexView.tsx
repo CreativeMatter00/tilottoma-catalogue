@@ -1,9 +1,15 @@
 "use client"
 
-import { ChevronLeft, Heart, User, Grid3X3 } from "lucide-react"
+import { Heart, User, Grid3X3 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Left, TilottomaLogo } from "../icons/logo"
+import { useRouter } from "next/navigation";
 
 export default function CatalogIndexView({ onBack }: { onBack: () => void }) {
+    const router = useRouter();
+    const onClickDummy = () => {
+        router.push("/brand")
+    }
     return (
         <div className="absolute inset-0 transition-transform duration-700 ease-in-out translate-x-0">
             {/* Background Image */}
@@ -20,19 +26,14 @@ export default function CatalogIndexView({ onBack }: { onBack: () => void }) {
             </div>
 
             {/* Header */}
-            <header className="relative z-10 flex items-center justify-between p-6">
-                <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">t</span>
-                    </div>
-                    <span className="text-white text-xl font-medium">tilottoma</span>
-                </div>
-                <div className="flex items-center space-x-4 text-white">
-                    <span className="text-sm">Corporate Sales</span>
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+            <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between p-6 bg-white backdrop-blur-[20px]">
+                <TilottomaLogo />
+                <div className="flex items-center space-x-4 text-[#252525]">
+                    <span className="text-base font-light">Corporate Sales</span>
+                    <Button variant="ghost" size="icon" className="text-[#252525] hover:bg-[#252525]/10 cursor-pointer">
                         <Heart className="w-5 h-5" />
                     </Button>
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                    <Button variant="ghost" size="icon" className="text-[#252525] hover:bg-[#252525]/10 cursor-pointer">
                         <User className="w-5 h-5" />
                     </Button>
                 </div>
@@ -41,57 +42,69 @@ export default function CatalogIndexView({ onBack }: { onBack: () => void }) {
             {/* Back Navigation */}
             <button
                 onClick={onBack}
-                className="absolute left-6 top-1/2 -translate-y-1/2 z-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-3 text-white hover:bg-white/20 transition-all duration-300 group"
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-20  transition-all duration-300 group"
             >
-                <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform duration-300" />
+                <Left />
             </button>
 
             {/* Content */}
-            <div className="relative z-10 flex h-full pt-20">
-                <div className="w-64 p-6 space-y-4">
-                    <nav className="space-y-2">
-                        {["Home", "Industrial", "Heavy Duty", "Bathroom", "Wall"].map((item) => (
-                            <a key={item} href="#" className="block text-white hover:text-red-400 transition-colors">
-                                {item}
-                            </a>
-                        ))}
-                    </nav>
-                </div>
-
-                <div className="flex-1 p-6">
-                    <h1 className="text-6xl font-light text-white mb-8">INDEX</h1>
-                    <div className="flex flex-wrap gap-4 mb-8">
-                        <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                            <Grid3X3 className="w-4 h-4 mr-2" />
-                            Brand Alphabetically
-                        </Button>
-                        {["Effect", "Tiles Body", "Size", "Usage", "Project View"].map((item) => (
-                            <Button
-                                key={item}
-                                variant="outline"
-                                className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-                            >
-                                {item}
-                            </Button>
-                        ))}
-                    </div>
-
-                    {/* Usage Submenu */}
-                    <div className="mb-6">
-                        <h3 className="text-white text-lg mb-4 underline">Usage</h3>
-                        <div className="flex flex-wrap gap-3">
-                            {["Actual", "Azul", "Grama", "Gila", "Others"].map((item) => (
-                                <span
+            <div className="relative z-10 flex h-full pt-40 py-20 px-32">
+                <div className="w-full flex rounded-2xl bg-[#43434366] backdrop-blur-[10px] p-10">
+                    {/* Sidebar */}
+                    <div className="w-64 pr-8 border-r border-white/10">
+                        <nav className="space-y-2">
+                            <p className="text-white text-sm mb-2 font-medium">Usage</p>
+                            {["Home", "Industrial", "Heavy Duty", "Bathroom", "Wall"].map((item) => (
+                                <a
                                     key={item}
-                                    className="text-white/80 hover:text-white cursor-pointer transition-colors"
+                                    onClick={onClickDummy}
+                                    className="block px-3 py-2 text-sm text-white/90 hover:bg-white/10 rounded transition cursor-pointer"
                                 >
                                     {item}
-                                </span>
+                                </a>
                             ))}
+                        </nav>
+                    </div>
+
+                    {/* Main Content */}
+                    <div className="flex-1 pl-8">
+                        <h1 className="text-4xl font-semibold text-white mb-6">INDEX</h1>
+                        <div className="flex flex-wrap gap-4 mb-8">
+                            <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
+                                <Grid3X3 className="w-4 h-4 mr-2" />
+                                Brand Alphabetically
+                            </Button>
+                            {["Effect", "Tiles Body", "Size", "Usage", "Project View"].map((item) => (
+                                <Button
+                                    key={item}
+                                    variant="outline"
+                                    onClick={onClickDummy}
+                                    className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer"
+                                >
+                                    {item}
+                                </Button>
+                            ))}
+                        </div>
+
+                        {/* Usage Submenu */}
+                        <div>
+                            <h3 className="text-white text-base mb-4 font-medium">Usage</h3>
+                            <div className="flex flex-wrap gap-3">
+                                {["Azteca", "Azulvi", "Giania", "Gila", "Others"].map((item) => (
+                                    <span
+                                        key={item}
+                                        onClick={onClickDummy}
+                                        className="text-white/80 hover:text-white text-sm cursor-pointer transition-colors"
+                                    >
+                                        {item}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
