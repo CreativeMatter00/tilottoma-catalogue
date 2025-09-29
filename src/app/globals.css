@@ -3,11 +3,45 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --natural-700: #374151;
+  --primary-red-500: #d9272d;
+  --primary-red-100: #fbd7d8;
+  --natural-600: #4b5563;
+  --natural-500: #6b7280;
+  --natural-300: #d1d5db;
+  --natural-400: ##9ca3af;
+  --natural-100: #f3f4f6;
+  --natural-200: #e5e7eb;
+  --natural-800: #1f2937;
+  --natural-50: #f9fafb;
+  --gray-25: #f9f9fc;
+  --gray-100: #e0e2e7;
+  --success-500: #22c55e;
+  --success-100: #dcfce7;
+  --warning-100: #fef3c7;
+  --warning-500: #f59e0b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-gray-25: var(--gray-25);
+  --color-gray-100: var(--gray-100);
+  --color-success-500: var(--success-500);
+  --color-success-100: var(--success-100);
+  --color-natural-800: var(--natural-800);
+  --color-warning-100: var(--warning-100);
+  --color-warning-500: var(--warning-500);
+  --color-natural-700: var(--natural-700);
+  --color-natural-600: var(--natural-600);
+  --color-natural-500: var(--natural-500);
+  --color-natural-400: var(--natural-400);
+  --color-natural-300: var(--natural-300);
+  --color-natural-200: var(--natural-200);
+  --color-natural-100: var(--natural-100);
+  --color-natural-50: var(--natural-50);
+  --color-primary-red-500: var(--primary-red-500);
+  --color-primary-red-100: var(--primary-red-100);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

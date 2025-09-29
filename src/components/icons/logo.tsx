@@ -1,4 +1,3 @@
-
 export const TilottomaLogo = () => (
     <svg width="241" height="50" viewBox="0 0 241 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_49_143)">
@@ -43,73 +42,234 @@ export const TilottomaLogoWhite = () => (
 
 )
 export const Right = () => (
-    <svg className="cursor-pointer group transition-transform duration-300" width="51" height="46" viewBox="0 0 51 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_dddd_225_2125)">
-            <path d="M11 23C11 11.9543 19.9543 3 31 3H51V43H31C19.9543 43 11 34.0457 11 23Z" className="fill-white group-hover:fill-[#434343] duration-300" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 16.25C29.5 16.0511 29.579 15.8603 29.7197 15.7197C29.8603 15.579 30.0511 15.5 30.25 15.5H42.25C42.4489 15.5 42.6397 15.579 42.7803 15.7197C42.921 15.8603 43 16.0511 43 16.25V29.75C43 29.9489 42.921 30.1397 42.7803 30.2803C42.6397 30.421 42.4489 30.5 42.25 30.5H30.25C30.0511 30.5 29.8603 30.421 29.7197 30.2803C29.579 30.1397 29.5 29.9489 29.5 29.75V26.75C29.5 26.5511 29.421 26.3603 29.2803 26.2197C29.1397 26.079 28.9489 26 28.75 26C28.5511 26 28.3603 26.079 28.2197 26.2197C28.079 26.3603 28 26.5511 28 26.75V29.75C28 30.3467 28.2371 30.919 28.659 31.341C29.081 31.7629 29.6533 32 30.25 32H42.25C42.8467 32 43.419 31.7629 43.841 31.341C44.2629 30.919 44.5 30.3467 44.5 29.75V16.25C44.5 15.6533 44.2629 15.081 43.841 14.659C43.419 14.2371 42.8467 14 42.25 14H30.25C29.6533 14 29.081 14.2371 28.659 14.659C28.2371 15.081 28 15.6533 28 16.25V19.25C28 19.4489 28.079 19.6397 28.2197 19.7803C28.3603 19.921 28.5511 20 28.75 20C28.9489 20 29.1397 19.921 29.2803 19.7803C29.421 19.6397 29.5 19.4489 29.5 19.25V16.25Z" className="fill-[#434343] group-hover:fill-white duration-300" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.281 23.531C38.3508 23.4613 38.4063 23.3785 38.4441 23.2874C38.4819 23.1963 38.5013 23.0986 38.5013 23C38.5013 22.9013 38.4819 22.8036 38.4441 22.7125C38.4063 22.6214 38.3508 22.5386 38.281 22.469L33.781 17.969C33.7113 17.8992 33.6285 17.8439 33.5374 17.8062C33.4463 17.7684 33.3486 17.749 33.25 17.749C33.1514 17.749 33.0537 17.7684 32.9626 17.8062C32.8715 17.8439 32.7887 17.8992 32.719 17.969C32.6493 18.0387 32.594 18.1215 32.5562 18.2126C32.5185 18.3037 32.4991 18.4014 32.4991 18.5C32.4991 18.5986 32.5185 18.6962 32.5562 18.7873C32.594 18.8785 32.6493 18.9612 32.719 19.031L35.9395 22.25H22.75C22.5511 22.25 22.3603 22.329 22.2197 22.4696C22.079 22.6103 22 22.8011 22 23C22 23.1989 22.079 23.3896 22.2197 23.5303C22.3603 23.671 22.5511 23.75 22.75 23.75H35.9395L32.719 26.969C32.6493 27.0387 32.594 27.1215 32.5562 27.2126C32.5185 27.3037 32.4991 27.4014 32.4991 27.5C32.4991 27.5986 32.5185 27.6962 32.5562 27.7873C32.594 27.8785 32.6493 27.9612 32.719 28.031C32.7887 28.1007 32.8715 28.156 32.9626 28.1938C33.0537 28.2315 33.1514 28.2509 33.25 28.2509C33.3486 28.2509 33.4463 28.2315 33.5374 28.1938C33.6285 28.156 33.7113 28.1007 33.781 28.031L38.281 23.531Z" className="fill-[#434343] group-hover:fill-white duration-300" />
-        </g>
-        <defs>
-            <filter id="filter0_dddd_225_2125" x="0" y="0" width="52" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="0.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_225_2125" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="-2" />
-                <feGaussianBlur stdDeviation="1" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
-                <feBlend mode="normal" in2="effect1_dropShadow_225_2125" result="effect2_dropShadow_225_2125" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="-4" />
-                <feGaussianBlur stdDeviation="1.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                <feBlend mode="normal" in2="effect2_dropShadow_225_2125" result="effect3_dropShadow_225_2125" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="-8" />
-                <feGaussianBlur stdDeviation="1.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0" />
-                <feBlend mode="normal" in2="effect3_dropShadow_225_2125" result="effect4_dropShadow_225_2125" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_225_2125" result="shape" />
-            </filter>
-        </defs>
-    </svg>
-
-)
+  <svg
+    className="cursor-pointer group transition-transform duration-300"
+    width="51"
+    height="46"
+    viewBox="0 0 51 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g filter="url(#filter0_dddd_225_2125)">
+      <path
+        d="M11 23C11 11.9543 19.9543 3 31 3H51V43H31C19.9543 43 11 34.0457 11 23Z"
+        className="fill-white group-hover:fill-[#434343] duration-300"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M29.5 16.25C29.5 16.0511 29.579 15.8603 29.7197 15.7197C29.8603 15.579 30.0511 15.5 30.25 15.5H42.25C42.4489 15.5 42.6397 15.579 42.7803 15.7197C42.921 15.8603 43 16.0511 43 16.25V29.75C43 29.9489 42.921 30.1397 42.7803 30.2803C42.6397 30.421 42.4489 30.5 42.25 30.5H30.25C30.0511 30.5 29.8603 30.421 29.7197 30.2803C29.579 30.1397 29.5 29.9489 29.5 29.75V26.75C29.5 26.5511 29.421 26.3603 29.2803 26.2197C29.1397 26.079 28.9489 26 28.75 26C28.5511 26 28.3603 26.079 28.2197 26.2197C28.079 26.3603 28 26.5511 28 26.75V29.75C28 30.3467 28.2371 30.919 28.659 31.341C29.081 31.7629 29.6533 32 30.25 32H42.25C42.8467 32 43.419 31.7629 43.841 31.341C44.2629 30.919 44.5 30.3467 44.5 29.75V16.25C44.5 15.6533 44.2629 15.081 43.841 14.659C43.419 14.2371 42.8467 14 42.25 14H30.25C29.6533 14 29.081 14.2371 28.659 14.659C28.2371 15.081 28 15.6533 28 16.25V19.25C28 19.4489 28.079 19.6397 28.2197 19.7803C28.3603 19.921 28.5511 20 28.75 20C28.9489 20 29.1397 19.921 29.2803 19.7803C29.421 19.6397 29.5 19.4489 29.5 19.25V16.25Z"
+        className="fill-[#434343] group-hover:fill-white duration-300"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M38.281 23.531C38.3508 23.4613 38.4063 23.3785 38.4441 23.2874C38.4819 23.1963 38.5013 23.0986 38.5013 23C38.5013 22.9013 38.4819 22.8036 38.4441 22.7125C38.4063 22.6214 38.3508 22.5386 38.281 22.469L33.781 17.969C33.7113 17.8992 33.6285 17.8439 33.5374 17.8062C33.4463 17.7684 33.3486 17.749 33.25 17.749C33.1514 17.749 33.0537 17.7684 32.9626 17.8062C32.8715 17.8439 32.7887 17.8992 32.719 17.969C32.6493 18.0387 32.594 18.1215 32.5562 18.2126C32.5185 18.3037 32.4991 18.4014 32.4991 18.5C32.4991 18.5986 32.5185 18.6962 32.5562 18.7873C32.594 18.8785 32.6493 18.9612 32.719 19.031L35.9395 22.25H22.75C22.5511 22.25 22.3603 22.329 22.2197 22.4696C22.079 22.6103 22 22.8011 22 23C22 23.1989 22.079 23.3896 22.2197 23.5303C22.3603 23.671 22.5511 23.75 22.75 23.75H35.9395L32.719 26.969C32.6493 27.0387 32.594 27.1215 32.5562 27.2126C32.5185 27.3037 32.4991 27.4014 32.4991 27.5C32.4991 27.5986 32.5185 27.6962 32.5562 27.7873C32.594 27.8785 32.6493 27.9612 32.719 28.031C32.7887 28.1007 32.8715 28.156 32.9626 28.1938C33.0537 28.2315 33.1514 28.2509 33.25 28.2509C33.3486 28.2509 33.4463 28.2315 33.5374 28.1938C33.6285 28.156 33.7113 28.1007 33.781 28.031L38.281 23.531Z"
+        className="fill-[#434343] group-hover:fill-white duration-300"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_dddd_225_2125"
+        x="0"
+        y="0"
+        width="52"
+        height="46"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset />
+        <feGaussianBlur stdDeviation="0.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_225_2125"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-2" />
+        <feGaussianBlur stdDeviation="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_dropShadow_225_2125"
+          result="effect2_dropShadow_225_2125"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-4" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect2_dropShadow_225_2125"
+          result="effect3_dropShadow_225_2125"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-8" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect3_dropShadow_225_2125"
+          result="effect4_dropShadow_225_2125"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect4_dropShadow_225_2125"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
 export const Left = () => (
-    <svg className="cursor-pointer group transition-transform duration-300" width="51" height="46" viewBox="0 0 51 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_dddd_225_2149)">
-            <path d="M0 3H20C31.0457 3 40 11.9543 40 23C40 34.0457 31.0457 43 20 43H0V3Z" className="fill-white group-hover:fill-[#434343] duration-300" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M26 16.25C26 16.0511 25.921 15.8603 25.7803 15.7197C25.6397 15.579 25.4489 15.5 25.25 15.5H13.25C13.0511 15.5 12.8603 15.579 12.7197 15.7197C12.579 15.8603 12.5 16.0511 12.5 16.25V29.75C12.5 29.9489 12.579 30.1397 12.7197 30.2803C12.8603 30.421 13.0511 30.5 13.25 30.5H25.25C25.4489 30.5 25.6397 30.421 25.7803 30.2803C25.921 30.1397 26 29.9489 26 29.75V26.75C26 26.5511 26.079 26.3603 26.2197 26.2197C26.3603 26.079 26.5511 26 26.75 26C26.9489 26 27.1397 26.079 27.2803 26.2197C27.421 26.3603 27.5 26.5511 27.5 26.75V29.75C27.5 30.3467 27.2629 30.919 26.841 31.341C26.419 31.7629 25.8467 32 25.25 32H13.25C12.6533 32 12.081 31.7629 11.659 31.341C11.2371 30.919 11 30.3467 11 29.75V16.25C11 15.6533 11.2371 15.081 11.659 14.659C12.081 14.2371 12.6533 14 13.25 14H25.25C25.8467 14 26.419 14.2371 26.841 14.659C27.2629 15.081 27.5 15.6533 27.5 16.25V19.25C27.5 19.4489 27.421 19.6397 27.2803 19.7803C27.1397 19.921 26.9489 20 26.75 20C26.5511 20 26.3603 19.921 26.2197 19.7803C26.079 19.6397 26 19.4489 26 19.25V16.25Z" className="fill-[#434343] group-hover:fill-white duration-300" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2194 23.531C17.1495 23.4613 17.0941 23.3785 17.0563 23.2874C17.0185 23.1963 16.999 23.0986 16.999 23C16.999 22.9013 17.0185 22.8036 17.0563 22.7125C17.0941 22.6214 17.1495 22.5386 17.2194 22.469L21.7194 17.969C21.8602 17.8281 22.0512 17.749 22.2504 17.749C22.4495 17.749 22.6405 17.8281 22.7814 17.969C22.9222 18.1098 23.0013 18.3008 23.0013 18.5C23.0013 18.6991 22.9222 18.8901 22.7814 19.031L19.5609 22.25H32.7504C32.9493 22.25 33.14 22.329 33.2807 22.4696C33.4213 22.6103 33.5004 22.8011 33.5004 23C33.5004 23.1989 33.4213 23.3896 33.2807 23.5303C33.14 23.671 32.9493 23.75 32.7504 23.75H19.5609L22.7814 26.969C22.8511 27.0387 22.9064 27.1215 22.9441 27.2126C22.9819 27.3037 23.0013 27.4014 23.0013 27.5C23.0013 27.5986 22.9819 27.6962 22.9441 27.7873C22.9064 27.8785 22.8511 27.9612 22.7814 28.031C22.7116 28.1007 22.6288 28.156 22.5377 28.1938C22.4466 28.2315 22.349 28.2509 22.2504 28.2509C22.1517 28.2509 22.0541 28.2315 21.963 28.1938C21.8719 28.156 21.7891 28.1007 21.7194 28.031L17.2194 23.531Z" className="fill-[#434343] group-hover:fill-white duration-300" />
-        </g>
-        <defs>
-            <filter id="filter0_dddd_225_2149" x="-1" y="0" width="52" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset />
-                <feGaussianBlur stdDeviation="0.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_225_2149" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="2" />
-                <feGaussianBlur stdDeviation="1" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
-                <feBlend mode="normal" in2="effect1_dropShadow_225_2149" result="effect2_dropShadow_225_2149" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="4" />
-                <feGaussianBlur stdDeviation="1.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                <feBlend mode="normal" in2="effect2_dropShadow_225_2149" result="effect3_dropShadow_225_2149" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dx="8" />
-                <feGaussianBlur stdDeviation="1.5" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0" />
-                <feBlend mode="normal" in2="effect3_dropShadow_225_2149" result="effect4_dropShadow_225_2149" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_225_2149" result="shape" />
-            </filter>
-        </defs>
-    </svg>
-)
+  <svg
+    className="cursor-pointer group transition-transform duration-300"
+    width="51"
+    height="46"
+    viewBox="0 0 51 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g filter="url(#filter0_dddd_225_2149)">
+      <path
+        d="M0 3H20C31.0457 3 40 11.9543 40 23C40 34.0457 31.0457 43 20 43H0V3Z"
+        className="fill-white group-hover:fill-[#434343] duration-300"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M26 16.25C26 16.0511 25.921 15.8603 25.7803 15.7197C25.6397 15.579 25.4489 15.5 25.25 15.5H13.25C13.0511 15.5 12.8603 15.579 12.7197 15.7197C12.579 15.8603 12.5 16.0511 12.5 16.25V29.75C12.5 29.9489 12.579 30.1397 12.7197 30.2803C12.8603 30.421 13.0511 30.5 13.25 30.5H25.25C25.4489 30.5 25.6397 30.421 25.7803 30.2803C25.921 30.1397 26 29.9489 26 29.75V26.75C26 26.5511 26.079 26.3603 26.2197 26.2197C26.3603 26.079 26.5511 26 26.75 26C26.9489 26 27.1397 26.079 27.2803 26.2197C27.421 26.3603 27.5 26.5511 27.5 26.75V29.75C27.5 30.3467 27.2629 30.919 26.841 31.341C26.419 31.7629 25.8467 32 25.25 32H13.25C12.6533 32 12.081 31.7629 11.659 31.341C11.2371 30.919 11 30.3467 11 29.75V16.25C11 15.6533 11.2371 15.081 11.659 14.659C12.081 14.2371 12.6533 14 13.25 14H25.25C25.8467 14 26.419 14.2371 26.841 14.659C27.2629 15.081 27.5 15.6533 27.5 16.25V19.25C27.5 19.4489 27.421 19.6397 27.2803 19.7803C27.1397 19.921 26.9489 20 26.75 20C26.5511 20 26.3603 19.921 26.2197 19.7803C26.079 19.6397 26 19.4489 26 19.25V16.25Z"
+        className="fill-[#434343] group-hover:fill-white duration-300"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M17.2194 23.531C17.1495 23.4613 17.0941 23.3785 17.0563 23.2874C17.0185 23.1963 16.999 23.0986 16.999 23C16.999 22.9013 17.0185 22.8036 17.0563 22.7125C17.0941 22.6214 17.1495 22.5386 17.2194 22.469L21.7194 17.969C21.8602 17.8281 22.0512 17.749 22.2504 17.749C22.4495 17.749 22.6405 17.8281 22.7814 17.969C22.9222 18.1098 23.0013 18.3008 23.0013 18.5C23.0013 18.6991 22.9222 18.8901 22.7814 19.031L19.5609 22.25H32.7504C32.9493 22.25 33.14 22.329 33.2807 22.4696C33.4213 22.6103 33.5004 22.8011 33.5004 23C33.5004 23.1989 33.4213 23.3896 33.2807 23.5303C33.14 23.671 32.9493 23.75 32.7504 23.75H19.5609L22.7814 26.969C22.8511 27.0387 22.9064 27.1215 22.9441 27.2126C22.9819 27.3037 23.0013 27.4014 23.0013 27.5C23.0013 27.5986 22.9819 27.6962 22.9441 27.7873C22.9064 27.8785 22.8511 27.9612 22.7814 28.031C22.7116 28.1007 22.6288 28.156 22.5377 28.1938C22.4466 28.2315 22.349 28.2509 22.2504 28.2509C22.1517 28.2509 22.0541 28.2315 21.963 28.1938C21.8719 28.156 21.7891 28.1007 21.7194 28.031L17.2194 23.531Z"
+        className="fill-[#434343] group-hover:fill-white duration-300"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_dddd_225_2149"
+        x="-1"
+        y="0"
+        width="52"
+        height="46"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset />
+        <feGaussianBlur stdDeviation="0.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_225_2149"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="2" />
+        <feGaussianBlur stdDeviation="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_dropShadow_225_2149"
+          result="effect2_dropShadow_225_2149"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="4" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect2_dropShadow_225_2149"
+          result="effect3_dropShadow_225_2149"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="8" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect3_dropShadow_225_2149"
+          result="effect4_dropShadow_225_2149"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect4_dropShadow_225_2149"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
